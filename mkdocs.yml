@@ -1,5 +1,6 @@
 site_name: Finance Perso
-site_url: https://mydomain.org/mysite
+site_url: https://soragxyz.github.io/finance/
+
 theme:
   name: material
   favicon: favicon.png
@@ -7,12 +8,8 @@ theme:
     logo: material/facebook-gaming
   font:
     text: Roboto Mono
-  palette:
 
-    - media: "(prefers-color-scheme)"
-      toggle:
-        icon: material/brightness-auto
-        name: Switch to light mode
+  palette:
 
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
@@ -29,4 +26,5 @@ theme:
         name: Switch to light mode
 
 extra:
+  # Remove footer "Made with mkdocs"
   generator: false
