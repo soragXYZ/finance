@@ -10,7 +10,7 @@ theme:
   icon:
     logo: material/facebook-gaming
   font:
-    text: Roboto Mono
+    text: Roboto
 
   palette:
     # Palette toggle for light mode
@@ -28,12 +28,40 @@ theme:
         name: Switch to light mode
   
   features:
+    - navigation.indexes
     - navigation.tabs
     - navigation.top
     - navigation.tracking
-    - toc.integrate
+    - navigation.footer
+    - toc.follow
     - content.action.edit
     - content.action.view
+
+nav:
+  - Accueil: 'index.md'
+  - Livrets:
+    - Qu'est-ce qu'un livret ?: livrets/description.md
+    - Livret A: livrets/A.md
+    - LEP: livrets/LEP.md
+    - Livret Jeune: livrets/jeune.md
+    - LDDS: livrets/LDDS.md
+    - Autres livrets bancaires: livrets/autres.md
+
+markdown_extensions:
+  - tables
+  - md_in_html
+  - attr_list
+  - toc:
+      permalink: true
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji 
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+extra_css:
+  - stylesheets/extra.css
 
 extra:
   # Remove footer "Made with mkdocs"
