@@ -1,5 +1,8 @@
 site_name: Finance Perso
 site_url: https://soragxyz.github.io/finance/
+repo_url: https://github.com/soragXYZ/finance
+repo_name: soragXYZ/finance
+edit_uri: edit/main/docs/
 
 theme:
   name: material
@@ -10,7 +13,6 @@ theme:
     text: Roboto Mono
 
   palette:
-
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
@@ -24,6 +26,14 @@ theme:
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
+  
+  features:
+    - navigation.tabs
+    - navigation.top
+    - navigation.tracking
+    - toc.integrate
+    - content.action.edit
+    - content.action.view
 
 extra:
   # Remove footer "Made with mkdocs"
