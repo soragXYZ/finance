@@ -46,6 +46,8 @@ nav:
     - Livret Jeune: livrets/jeune.md
     - LDDS: livrets/LDDS.md
     - Autres livrets bancaires: livrets/autres.md
+  - Autres:
+    - Comparateurs: autre/comparateurs.md
 
 markdown_extensions:
   - tables
