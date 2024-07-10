@@ -68,3 +68,9 @@ extra_css:
 extra:
   # Remove footer "Made with mkdocs"
   generator: false
+
+plugins:
+  - search
+  - git-revision-date-localized:
+      enable_creation_date: true
+  - git-authors
